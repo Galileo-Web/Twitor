@@ -1,11 +1,11 @@
-let url = window.location.href
-let swLocation = 'Twitor/sw.js'
+let url = window.location.href;
+let swLocation = 'Twitor/sw.js';
 if(navigator.serviceWorker)
 {
     if(url.includes('localhost') || url.includes('127.0.0.1')){
         swLocation = '/sw.js'
     }
-    navigator.serviceWorker.register('swLocation')
+    navigator.serviceWorker.register(swLocation);
 }
 
 
